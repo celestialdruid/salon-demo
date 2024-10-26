@@ -9,7 +9,7 @@ function Booking() {
       <h2>We accept walk-ins!</h2>
 
       <center><a href="/"><button className="book-button">Book Here</button></a></center>
-      
+      <br />
       <hr />
       <Policies />
       <Contact />
