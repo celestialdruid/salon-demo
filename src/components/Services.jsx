@@ -29,11 +29,11 @@ function Services() {
 
           <tr>
             <th colSpan="3" className="services">
-              Microlocs
+              Micro Locs
             </th>
           </tr>
           <tr>
-            <td>Microloc Retwist</td>
+            <td>Micro Loc Retwist</td>
             <td>$140+</td>
           </tr>
           <tr>

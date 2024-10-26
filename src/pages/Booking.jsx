@@ -1,6 +1,5 @@
 import React from "react";
 import Policies from "../components/Policies";
-import Contact from "../components/Contact";
 
 function Booking() {
   return (
@@ -12,7 +11,6 @@ function Booking() {
       <br />
       <hr />
       <Policies />
-      <Contact />
     </>
   );
 }

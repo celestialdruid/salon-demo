@@ -1,31 +1,58 @@
 import React from "react";
+import { useState } from "react";
 
 function Contact() {
+  const [formData, setFormData] = useState({
+    name: "",
+    email: "",
+    message: "",
+  });
+
+  function handleSubmit(event) {
+    event.preventDefault();
+    // Handle form submission logic here
+    console.log("Submitted data:", formData);
+  }
+
+  function handleChange(event) {
+    const { name, value } = event.target;
+    setFormData((prevState) => ({
+      ...prevState,
+      [name]: value,
+    }));
+  }
+
   return (
-    <>
-    <hr />
-      <div className="contact">
-        <div id="location">
-          <h4>Contact</h4>
-          <p>
-            123 Main St, Suite 456 <br />
-            Your City, ST 00000
-          </p>
-          <p>
-            Phone: (555)555-5555
-            <br />
-            Email: name@business.com
-          </p>
-        </div>
-        <div id="hours">
-          <h4>Hours</h4>
-          <ul>
-            <li>Monday - Friday: 10:30am - 5:30pm</li>
-            <li>Saturday, Sunday - Closed</li>
-          </ul>
-        </div>
-      </div>
-    </>
+    <div id="contact-form">
+      <form onSubmit={handleSubmit}>
+        <label>Name: </label>
+        <input
+          type="text"
+          name="name"
+          value={formData.name}
+          onChange={handleChange}
+        />
+        <br />
+        <label>Email: </label>
+        <input
+          type="email"
+          name="email"
+          value={formData.email}
+          onChange={handleChange}
+        />
+        <br />
+        <label>Your Message: </label>
+        <br />
+        <textarea
+          type="text"
+          name="message"
+          value={formData.message}
+          onChange={handleChange}
+        />
+        <br />
+        <button type="submit">Submit</button>
+      </form>
+    </div>
   );
 }
 

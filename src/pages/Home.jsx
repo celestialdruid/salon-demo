@@ -1,6 +1,5 @@
 import React from "react";
 import Services from "../components/Services";
-import Contact from "../components/Contact";
 import Reviews from "../components/Reviews";
 import Gallery from "../components/Gallery";
 import BookButton from "../components/BookButton";
@@ -35,10 +34,7 @@ function Home() {
       </section>
 
       <BookButton />
-      
-      <section id="contact">
-        <Contact />
-      </section>
+
     </>
   );
 }

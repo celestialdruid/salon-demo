@@ -1,5 +1,4 @@
 import React from "react";
-import Contact from "../components/Contact";
 
 function Products() {
 
@@ -28,13 +27,11 @@ function Products() {
                 <article className="product-card">
                     <img src="/images/product3.jpg" alt="..." />
                     <h2>Head Wraps & Loc Socks</h2>
-                    <p className="prices">$10</p>
+                    <p className="prices">$6</p>
                     <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Et possimus vel repudiandae esse!</p>
                     <button className="buy-button">Buy Now</button>
                 </article>
             </div>
-
-            <Contact />
         </>
     )
 }
