@@ -1,0 +1,335 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Peta:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Corinthia:wght@400;700&family=Lexend+Peta:wght@100..900&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  color-scheme: light dark;
+}
+
+:root {
+  font-family: Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+
+  /* dark mode */
+/*   --background-color: #242424;
+    --primary-color: rgb(141, 100, 255);
+  --secondary-color: rgb(112, 61, 255);
+  --accent-color: #ffd600;
+  --text-color: rgba(255, 255, 255);
+  --card-color: rgba(46, 45, 45, 0.75); 
+  --button-color: var(--primary-color); */
+ 
+
+  /* light mode */
+  --background-color: #F2E8E3;
+  --primary-color: #ac9285;
+  --secondary-color: #cdbbb3;
+  --accent-color: #5c4438;
+  --text-color: rgba(0, 0, 0, 0.87);
+  --card-color: rgba(255, 252, 250, 0.85);
+  --button-color: var(--primary-color);
+}
+
+a {
+  font-weight: 500;
+  color: var(--primary-color);
+  text-decoration: inherit;
+}
+a:hover {
+  color: var(--accent-color);
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  color: var(--text-color);
+  background-color: var(--background-color);
+  min-width: 320px;
+  min-height: 100vh;
+  font-size: large;
+}
+
+/* HEADER */
+
+header {
+  display: flex;
+  justify-content: space-between;
+}
+
+#title {
+  margin: 1rem;
+  text-align: left;
+  font-family: 'Lexend Peta';
+  font-weight: 200;
+}
+
+nav {
+  margin: 1rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: end;
+}
+
+nav button {
+  margin: 0.25rem 0.5rem;
+  font-size: large;
+}
+
+/* CONTENT */
+
+main {
+  margin: 2rem auto;
+  max-width: 70%;
+}
+
+main h1 {
+  font-size: 3.4em;
+  margin: 1rem;
+/*   line-height: 1.3; */
+  text-align: center;
+  color: var(--primary-color);
+  font-family: 'Corinthia';
+  text-transform: lowercase;
+}
+
+h2 {
+  text-align: center;
+}
+
+section {
+  margin: 3rem auto;
+}
+
+/* PROFILE */
+
+#profile {
+  display: flex;
+}
+
+#bio {
+  padding: 1rem;
+}
+
+#profile-photo {
+  max-width: 50%;
+  object-fit: cover;
+}
+
+/* GALLERY */
+
+#gallery {
+  border: 1px solid var(--secondary-color);
+  border-radius: 10px;
+  box-shadow: 1px 2px 6px var(--secondary-color);
+  background-color: var(--card-color);
+  padding: 1rem;
+}
+
+.gallery-container {
+  display: flex;
+  overflow: auto;
+  white-space: nowrap;
+  padding: 10px;
+}
+
+.gallery-img {
+  width: 600px;
+  height: 400px;
+  padding: 8px;
+}
+
+
+/* PRODUCTS */
+
+#products {
+  display: flex;
+  gap: 3rem;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin: 2rem auto;
+}
+
+.product-card {
+  border: 1px solid var(--accent-color);
+  border-radius: 10px;
+  box-shadow: 1px 2px 6px var(--accent-color);
+  padding: 2rem;
+  max-width: 350px;
+  background-color: var(--card-color);
+}
+
+.product-card img {
+  display: block;
+  margin: 1rem auto;
+  width: 100%;
+  border-radius: 10px;
+}
+
+.product-card p {
+  text-align: center;
+}
+
+.prices {
+  color: var(--accent-color);
+  font-size: 1.3rem;
+  font-style: italic;
+}
+
+.buy-button {
+  display: block;
+  margin: 1rem auto;
+}
+
+/* REVIEWS */
+
+#reviews {
+  max-height: 10%;
+}
+
+.review-card {
+  display: flex;
+  background-color: var(--card-color);
+  margin: 1rem;
+  border-radius: 10px;
+}
+
+.review-card img {
+  max-height: 200px;
+  border-radius: 10px;
+}
+
+.review-body {
+  padding: 1rem;
+}
+
+.review-name {
+  color: var(--primary-color);
+  font-weight: 200;
+}
+
+.review-body p {
+  font-style: italic;
+}
+
+.review-card:nth-child(even) {
+  flex-direction: row-reverse;
+}
+
+/* SERVICES */
+
+.services {
+  font-size: 1.5rem;
+}
+
+/* TABLE */
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td {
+  border: 2px solid var(--primary-color);
+  text-align: left;
+  padding: 0.5rem;
+}
+
+th {
+  text-align: center;
+  padding: 0.5rem;
+  background-color: var(--primary-color);
+  font-family: 'Lexend Peta';
+  font-weight: 400;
+}
+
+/* FOOTER / CONTACT */
+
+footer {
+  margin: 0;
+  background-color: var(--accent-color);
+  color: var(--background-color);
+}
+
+#contact {
+  display: flex;
+  gap: 1rem;
+  padding: 1rem;
+  justify-content: space-around;
+}
+
+#contact a:hover {
+  text-decoration: underline;
+  color: var(--primary-color);
+}
+
+h4 {
+  text-align: center;
+}
+
+#contact-form {
+  text-align: center;
+}
+
+#contact-submit:hover {
+  background-color: var(--secondary-color);
+  color: var(--accent-color);
+  font-weight: 800;
+}
+
+#hours ul { 
+  padding: 0;
+}
+
+#hours ul li {
+  list-style: none;
+}
+
+@media (max-width: 730px) {
+  /* move contact-form to next line */
+  #contact {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+
+/* BUTTONS */
+
+.book-button {
+  display: block;
+  margin: auto;
+  padding: 0.6em 20%;
+}
+
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 400;
+  font-family: inherit;
+  background-color: var(--button-color);
+  color: var(--text-color);
+  cursor: pointer;
+  transition: background-color 0.25s;
+}
+button:hover {
+  background-color: var(--accent-color);
+  color: var(--primary-color);
+  font-weight: 800;
+}
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
