@@ -12,7 +12,7 @@ function Footer() {
               Your City, ST 00000
             </p>
             <p>
-              Phone: (555) 555-5555
+              Phone: <a href="tel:+5555555555">(555) 555-5555</a> 
               <br />
               Email: <a href="mailto:name@business.com">name@business.com</a>
             </p>
