@@ -2,7 +2,7 @@ class Reviews extends HTMLElement {
   constructor() {
     super()
     this.innerHTML = `
-    <h1>Testimonials</h1>
+    <h1 class="heading">Testimonials</h1>
         <p>Here's what other clients are saying:</p>
 
         <div class="review-card">

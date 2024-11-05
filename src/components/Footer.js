@@ -1,3 +1,7 @@
+{/* import Contact component to nest inside Footer
+  
+  <script defer src="./src/components/Contact.js"></script> */}
+
 class Footer extends HTMLElement {
   constructor() {
     super()
@@ -25,7 +29,7 @@ class Footer extends HTMLElement {
             </ul>
           </div>
 
-          <Contact />
+          
         </div>
     </footer>
     `;

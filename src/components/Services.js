@@ -2,7 +2,7 @@ class Services extends HTMLElement {
   constructor() {
     super()
     this.innerHTML = `
-    <h1>Services</h1>
+    <h1 class="heading">Services</h1>
 
         <p>Prices depend on length, thickness, and severity of new growth.</p>
 
