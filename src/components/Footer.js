@@ -1,8 +1,7 @@
-import React from "react";
-import Contact from "./Contact.jsx";
-
-function Footer() {
-  return (
+class Footer extends HTMLElement {
+  constructor() {
+    super()
+    this.innerHTML = `
     <footer>
       <div id="contact">
           <div id="location">
@@ -29,7 +28,8 @@ function Footer() {
           <Contact />
         </div>
     </footer>
-  );
+    `;
+  }
 }
 
-export default Footer;
+customElements.define("site-footer", Footer);

@@ -3,10 +3,50 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script defer src="./src/components/Header.js"></script>
+    <script defer src="./src/components/Profile.js"></script>
+    <script defer src="./src/components/Footer.js"></script>
+    <script defer src="./src/components/Gallery.js"></script>
+    <script defer src="./src/components/Reviews.js"></script>
+    <script defer src="./src/components/Services.js"></script>
+    <link rel="stylesheet" href="styles.css" />
     <title>Locs & Looks (Demo)</title>
   </head>
   <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.jsx"></script>
+    <!-- --------------------  Header ------------------ -->
+    <header-element></header-element>
+
+    <!-- --------------------  Content ------------------ -->
+    <main>
+      <section id="about">
+        <profile-hero></profile-hero>
+      </section>
+
+      <a href="/salon-demo/src/pages/Booking.html">
+        <button class="book-button">Book Now</button>
+      </a>
+
+      <!-- --------------------  Gallery ------------------ -->
+      <section id="gallery">
+        <photo-gallery></photo-gallery>
+      </section>
+
+      <!-- --------------------  Reviews ------------------ -->
+      <section id="reviews">
+        <client-reviews></client-reviews>
+      </section>
+
+      <!-- --------------------  Services ------------------ -->
+      <section>
+        <services-offered></services-offered>
+      </section>
+
+      <a href="/salon-demo/src/pages/Booking.html">
+        <button class="book-button">Book Now</button>
+      </a>
+    </main>
+
+    <!-- --------------------  Footer ------------------ -->
+    <site-footer></site-footer>
   </body>
 </html>
