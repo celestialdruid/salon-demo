@@ -111,7 +111,7 @@ section {
 
 #profile {
   display: flex;
-  flex-direction: row-reverse;
+  align-items: center;
 }
 
 #bio {
@@ -121,6 +121,7 @@ section {
 #profile-photo {
   max-width: 50%;
   object-fit: cover;
+  border-radius: 10px;
 }
 
 /* GALLERY */
@@ -266,7 +267,7 @@ footer {
 
 #contact a:hover {
   text-decoration: underline;
-  color: var(--primary-color);
+  color: var(--secondary-color);
 }
 
 h4 {
@@ -341,6 +342,14 @@ button:focus-visible {
     max-width: 90%;
   }
 
+  #profile {
+    flex-direction: column-reverse;
+  }
+
+  #profile-photo {
+    max-width: 100%;
+  }
+
   .product-card {
     max-width: 70%;
   }
@@ -352,14 +361,6 @@ button:focus-visible {
 }
 
 @media (max-width: 550px) {
-  #profile {
-    flex-direction: column;
-  }
-
-  #profile-photo {
-    max-width: 100%;
-  }
-
   .gallery-img {
     width: 300px;
     height: 200px;
