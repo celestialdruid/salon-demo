@@ -1,6 +1,6 @@
 # Locs & Looks (Hair Stylist Demo)
 
-[View this demo on GitHub Pages](https://celestialdruid.github.io/salon-demo/).
+[View this demo on GitHub Pages](https://starsl8.github.io/salon-demo/).
 
 ## Project Objectives
 To design the front end of a website for a small business hair salon in order to demonstrate my ability to:
